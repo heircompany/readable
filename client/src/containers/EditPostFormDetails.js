@@ -6,7 +6,7 @@ const getPostFromPath = (ids, posts, path) => {
   const postId = path.slice(path.lastIndexOf('/') + 1);
 
   if (ids.indexOf(postId) === -1) {
-    console.log('NO');
+    console.log('NONE');
     return {};
   }
   const post = { ...posts[postId] };

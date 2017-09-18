@@ -8,6 +8,7 @@ import {
   deleteSingleComment,
   addCommentToServer
 } from '../actions';
+
 import Post from '../components/Post';
 
 const getPostFromPath = (ids, posts, comments, path) => {
