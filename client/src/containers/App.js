@@ -23,22 +23,7 @@ class App extends Component {
   }
 
   render() {
-    /*
-     * Get the `match` object from Route props (see '../index.js').
-     * A `match` object contains information about how a <Route path>
-     * matched the URL. `match` objects contain a `params` object property
-     * with key/value pairs parsed from the URL corresponding to the dynamic
-     * segment of the path.
-     */
-    const urlParams = this.props.match.params;
-    // Get the category value from the params properties.
-    const category = urlParams.category;
-    /*
-     * A `location` object is a <Switch> prop used for matching children
-     * elements instead of the current history location.
-     * All children of a <Switch> should be <Route> elements.
-     * <Route> elements are matched using their pathname prop.
-     */
+    const { category } = this.props.match.params.category;
     const path = this.props.location.pathname;
 
     return (

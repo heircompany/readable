@@ -1,7 +1,7 @@
 import React from 'react';
 import CategoryLink from './CategoryLink';
 
-const SelectCategory = () => (
+const CategorySelector = () => (
   <div className="select-category-nav">
     <div className="select-category">
       <p>Select Category:</p>
@@ -18,4 +18,4 @@ const SelectCategory = () => (
   </div>
 );
 
-export default SelectCategory;
+export default CategorySelector;
