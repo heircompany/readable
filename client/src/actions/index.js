@@ -252,7 +252,7 @@ export function editSingleComment(commentId, newComment) {
     const timestamp = Date.now();
     return editComment(commentId, {
       ...newComment,
-      timestamp: timestamp
+      timestamp
     }).then(() =>
       getSingleComment(commentId).then(data => dispatch(updateComment(data)))
     );

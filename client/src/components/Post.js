@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
-import SelectCategory from './SelectCategory';
+import CategorySelector from './CategorySelector';
 import EditPostButtonLink from './EditPostButtonLink';
 import EditCommentForm from './EditCommentForm';
 import CommentForm from './CommentForm';
@@ -9,8 +9,6 @@ import { convertToReadableDate } from '../utils/convertDate';
 import ThumbsUp from 'react-icons/lib/fa/thumbs-o-up';
 import ThumbsDown from 'react-icons/lib/fa/thumbs-o-down';
 import HomeButton from 'react-icons/lib/fa/home';
-// import CommentsButton from 'react-icons/lib/fa/comments-o';
-// import EditButton from 'react-icons/lib/fa/edit';
 import DeleteButton from 'react-icons/lib/fa/trash-o';
 import AddTextIcon from 'react-icons/lib/fa/plus-circle';
 
@@ -140,7 +138,7 @@ class Post extends Component {
               <HomeButton size="40" />
             </div>
           </Link>
-          <SelectCategory />
+          <CategorySelector />
         </section>
 
         <div className="single-post-details">

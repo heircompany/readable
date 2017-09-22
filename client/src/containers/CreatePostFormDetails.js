@@ -2,9 +2,9 @@ import { connect } from 'react-redux';
 import { addPostToServer, addCommentToServer, fetchAllPosts } from '../actions';
 import CreatePostForm from '../components/CreatePostForm';
 
-const mapStateToProps = state => ({
-  posts: state.posts,
-  allPosts: state.allPosts
+const mapStateToProps = ({ posts, allPosts }) => ({
+  posts,
+  allPosts
 });
 
 const mapDispatchToProps = {

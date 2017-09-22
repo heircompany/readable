@@ -28,4 +28,12 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-registerServiceWorker();
+// ReactDOM.render(
+//   <Provider store={store}>
+//     <Router history={history}>
+//       <Route path="/" component={App} />
+//     </Router>
+//   </Provider>,
+//   document.getElementById('root')
+// );
+// registerServiceWorker();

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Switch, Route } from 'react-router';
 import { VisiblePosts, VisibleCategoryPosts } from './VisiblePosts';
+import Category from '../components/Category';
 import { PostDetails } from './PostDetails';
 import { CreatePostFormDetails } from './CreatePostFormDetails';
 import { EditPostFormDetails } from './EditPostFormDetails';
@@ -23,7 +24,8 @@ class App extends Component {
   }
 
   render() {
-    const { category } = this.props.match.params.category;
+    const urlParams = this.props.match.params;
+    const category = urlParams.category;
     const path = this.props.location.pathname;
 
     return (
@@ -33,21 +35,25 @@ class App extends Component {
         </div>
         <Switch>
           <Route exact path="/" render={() => <VisiblePosts />} />
+
           <Route
             exact
             path="/create"
             render={() => <CreatePostFormDetails />}
           />
+
           <Route
             exact
             path="/edit/:postId?"
             render={() => <EditPostFormDetails path={path} />}
           />
+
           <Route
             exact
             path="/:category?"
             render={() => <VisibleCategoryPosts selectedCategory={category} />}
           />
+
           <Route path="/:postId?" render={() => <PostDetails path={path} />} />
         </Switch>
       </div>

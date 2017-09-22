@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import SelectCategory from './SelectCategory';
+import CategorySelector from './CategorySelector';
 import PostFormLink from './PostFormLink';
 import ArrowUp from 'react-icons/lib/fa/sort-asc';
 import ArrowDown from 'react-icons/lib/fa/sort-desc';
@@ -37,10 +37,10 @@ class AllPosts extends Component {
           <HomeButton size="40" />
         </div>
         <section className="navigation">
-          <SelectCategory />
+          <CategorySelector />
           <div className="sort-select-form">
             <form onSubmit={this.handleSubmit}>
-              <label>Sort posts by:  </label>
+              <label>Sort posts by: </label>
               <select value={this.props.sortOrder} onChange={this.handleChange}>
                 <option value="MOST_RECENT">most recent</option>
                 <option value="LEAST_RECENT">least recent</option>

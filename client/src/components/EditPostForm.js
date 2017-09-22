@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import SelectCategory from './SelectCategory';
+import CategorySelector from './CategorySelector';
 import InitializePostForm from './InitializePostForm';
 import HomeButton from 'react-icons/lib/fa/home';
 
@@ -28,7 +28,7 @@ class EditPostForm extends Component {
             <HomeButton size="40" />
           </div>
         </Link>
-        <SelectCategory />
+        <CategorySelector />
         <div className="create-post-form">
           <h2>Edit post</h2>
           <div className="post-form-container">

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PostForm from './PostForm';
-import SelectCategory from './SelectCategory';
+import CategorySelector from './CategorySelector';
 import HomeButton from 'react-icons/lib/fa/home';
 
 class CreatePostForm extends Component {
@@ -23,7 +23,7 @@ class CreatePostForm extends Component {
             <HomeButton size="40" />
           </div>
         </Link>
-        <SelectCategory />
+        <CategorySelector />
         <div className="create-post-form">
           <h2>Add a post</h2>
           <div className="post-form-container">

@@ -2,7 +2,6 @@ import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
 
 import {
-  // allCategories,
   sortingTypes,
   GET_CATEGORIES,
   RECEIVE_ALL_POSTS,
@@ -16,7 +15,6 @@ import {
   FLAG_POST_AS_DELETED,
   UPDATE_POSTS_VISIBILITY,
   UPDATE_COMMENTS_VISIBILITY,
-  // ORDER_POSTS,
   CHANGE_SORTING_ORDER
 } from '../actions';
 
