@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Switch, Route } from 'react-router';
 import { VisiblePosts, VisibleCategoryPosts } from './VisiblePosts';
-import Category from '../components/Category';
 import { PostDetails } from './PostDetails';
 import { CreatePostFormDetails } from './CreatePostFormDetails';
 import { EditPostFormDetails } from './EditPostFormDetails';

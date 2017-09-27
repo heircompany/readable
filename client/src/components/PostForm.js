@@ -48,7 +48,7 @@ const textAreaField = ({ input, label, type, meta: { touched, error } }) => (
 );
 
 let PostForm = props => {
-  const { handleSubmit, load, submitting } = props;
+  const { handleSubmit, submitting } = props;
   return (
     <form onSubmit={handleSubmit}>
       <Field
